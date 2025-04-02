@@ -2,6 +2,7 @@ Feature: GSQA - Prueba - ATM - Ingreso
 
 Background: Set up test environment
   Given I am on Latam Airlines homepage
+  And I click in the "Close login incentive" button
 
 Scenario: Verify if the "Ofertas de Vuelos" redirect to the offers Page
   When I click in the "Ofertas y destinos" button
@@ -20,3 +21,7 @@ Scenario Outline: Verify if the destination text field show the error message
   | Medellin |
   | Bogota   |
 
+Scenario: aaa
+  When I click in the "Solo Ida" button
+  And The tab flight should be display
+  Then I should not see a return date text fiel
