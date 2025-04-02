@@ -23,7 +23,7 @@ public class LatamPage {
     private By latamPackagesImg = By.xpath("//img[@src='/content/dam/latamxp/sites/travel/mvp-subhome/banners-promocionales/co/campañas/2025/san-valentin/Subhome LT Banner Oferta 864x500 D! Desde (2).png']");
     private By originTextField = By.xpath("//input[@data-testid='fsb-origin--text-field']");
     private By departureTextField = By.xpath("//div[@data-testid='fsb-departure--text-field__wrapper']");
-    private  By returnTextField = By.xpath("//div[@data-testid='fsb-return--text-field__wrapper']");
+    public  By returnTextField = By.xpath("//div[@data-testid='fsb-return--text-field__wrapper']");
     private By searchFlightsBtn = By.xpath("//button[@data-testid='fsb-search-flights--button']");
     private By airportOptionLabel = By.xpath("//span[contains(@data-testid,'airport--autocomplete')]");
     private By destinationErrorMessageLabel = By.xpath("//div[@data-testid='fsb-destination--text-field__helper-text']");
