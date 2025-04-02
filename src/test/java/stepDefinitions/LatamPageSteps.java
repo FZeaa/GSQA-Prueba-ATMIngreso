@@ -138,6 +138,6 @@ public class LatamPageSteps {
     public void iShouldNotSeeAReturnDateTextFiel() {
         LOGGER.debug("Checking if the retunr date text fiel is not displayed..");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        Assert.assertFalse(latamPage.getReturnTextFieldEle().isDisplayed());
+        Assert.assertTrue(driver.findElements(latamPage.returnTextField).isEmpty());
     }
 }
