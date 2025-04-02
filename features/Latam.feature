@@ -1,6 +1,11 @@
-Feature: Latam
+Feature: GSQA - Prueba - ATM - Ingreso
 
-Scenario: aaa
-  When I navigate to the homepage
-  And Click in the "Ofertas y destinos" button
-  Then close the Drive
+Background: Set up test environment
+  Given I am on Latam Airlines homepage
+
+Scenario: Verify If the "Ofertas de Vuelos" redirect to the offers Page
+  When I Click in the "Ofertas y destinos" button
+  And I Click in the "Ofertas de vuelos" button
+  Then I should redirect to the offers Page
+  And The Latam Packages image should be displayed
+
