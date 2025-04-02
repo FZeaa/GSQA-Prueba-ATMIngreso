@@ -53,6 +53,12 @@ public class LatamPageSteps {
          case "Buscar Vuelos":
              latamPage.getSearchFlightsBtnEle().click();
              break;
+         case "Solo Ida":
+             latamPage.getOneWayBtnEle().click();
+             break;
+         case "Close login incentive":
+             latamPage.getCloseLoginIncentiveBtnEle().click();
+             break;
          default:
              throw new IllegalArgumentException(String.format("Invalid input:", buttonName));
      }
@@ -99,7 +105,7 @@ public class LatamPageSteps {
         String currentDateXPath = String.format("//span[@data-testid='date-%s']", currentDate);
         WebElement currentDateElement = driver.findElement(By.xpath(currentDateXPath));
         currentDateElement .click();
-        latamPage.getDepartureTextFieldEle().click();
+        latamPage.getReturnTextFieldEle().click();
         LOGGER.debug("Selecting a random future date...");
         String futureDate = dateHelper.generateFutureDate();
         String futureDateXPath = String.format("//span[@data-testid='date-%s']", futureDate);
@@ -114,5 +120,24 @@ public class LatamPageSteps {
     public void iShouldBeAbleToSeeTheErrorMessageInTheDestinationTextField() {
         LOGGER.debug("Checking if the destination error message is displayed...");
         Assert.assertTrue(latamPage.getDestinationErrorMessageLabelEle().isDisplayed());
+    }
+
+    /**
+     * Method to verify if the tab flight is displayed
+     */
+    @And("The tab flight should be display")
+    public void theTabFlightShouldBeDisplay() {
+        LOGGER.debug("Checking if the tab flight is displayed...");
+        Assert.assertTrue(latamPage.getTabFlightGridEle().isDisplayed());
+    }
+
+    /**
+     * Method to verify if the return date text field is not displayed
+     */
+    @Then("I should not see a return date text fiel")
+    public void iShouldNotSeeAReturnDateTextFiel() {
+        LOGGER.debug("Checking if the retunr date text fiel is not displayed..");
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Assert.assertFalse(latamPage.getReturnTextFieldEle().isDisplayed());
     }
 }
