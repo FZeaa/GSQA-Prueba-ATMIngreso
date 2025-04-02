@@ -136,7 +136,7 @@ public class LatamPageSteps {
      */
     @Then("I should not see a return date text fiel")
     public void iShouldNotSeeAReturnDateTextFiel() {
-        LOGGER.debug("Checking if the retunr date text fiel is not displayed..");
+        LOGGER.debug("Checking if the return date text field is not displayed..");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Assert.assertTrue(driver.findElements(latamPage.returnTextField).isEmpty());
     }

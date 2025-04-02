@@ -21,7 +21,7 @@ Scenario Outline: Verify if the destination text field show the error message
   | Medellin |
   | Bogota   |
 
-Scenario: aaa
+Scenario: Verify Check if the return date text field is not displayed when the one-way button is active
   When I click in the "Solo Ida" button
   And The tab flight should be display
   Then I should not see a return date text fiel
