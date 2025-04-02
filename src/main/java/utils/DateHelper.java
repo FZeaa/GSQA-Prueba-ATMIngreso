@@ -19,7 +19,7 @@ public class DateHelper {
      */
     public String generateFutureDate() {
         LocalDate today = LocalDate.now();
-        long randomDays = ThreadLocalRandom.current().nextLong(1, 29 + 1);
+        long randomDays = ThreadLocalRandom.current().nextLong(1, 30);
         LocalDate futureDate = today.plusDays(randomDays);
         return futureDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
     }
