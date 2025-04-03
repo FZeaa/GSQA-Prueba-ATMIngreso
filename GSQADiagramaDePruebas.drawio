@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0" version="26.2.4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1428" dy="1948" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1428" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -10,7 +10,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6M3mmVfWSf4sSf63VmGX-0" value="Test Runner" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="330" y="-10" width="120" height="40" as="geometry" />
+          <mxGeometry x="330" y="10" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6M3mmVfWSf4sSf63VmGX-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6M3mmVfWSf4sSf63VmGX-13" target="6M3mmVfWSf4sSf63VmGX-17">
           <mxGeometry relative="1" as="geometry" />
@@ -115,7 +115,7 @@
           <mxGeometry x="70" y="580" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6M3mmVfWSf4sSf63VmGX-59" value="&lt;span style=&quot;&quot;&gt;BDD Pattern&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=light-dark(#000000,#FF3333);rotation=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="290" y="40" width="100" height="30" as="geometry" />
+          <mxGeometry x="400" y="50" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6M3mmVfWSf4sSf63VmGX-65" value="&lt;span style=&quot;&quot;&gt;POM Pattern&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=light-dark(#000000,#FF3333);rotation=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="510" y="300" width="100" height="30" as="geometry" />
