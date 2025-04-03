@@ -5,15 +5,9 @@ permite la facil compresion del las prubas. Los TCs se puede ver en el file [Lat
 
 ### Modulo Arquitectura:
 1. Patrones de Arquitectura de pruebas:
-    - BDD Pattern: Este patrón de arquitectura se basa en enfocar el desarrollo en el comportamiento de la aplicación, lo que mejora la comunicación entre los equipos.
-      Fue implementado utilizando Gherkin en el archivo [Latam.feature](https://github.com/FZeaa/GSQA-Prueba-ATMIngreso/blob/master/features/Latam.feature)
-    - POM Pattern: Al usar un Page Object Model File se organiza el codigo de cierta forma que todos los Xpath y locators esten
-      en Files especificos lo cual ayuda para reutilizarlos en distintas parte del codigo, como en los StepDefinition, este patro fue implementado en el
-      file [LatamPageSteps.java](https://github.com/FZeaa/GSQA-Prueba-ATMIngreso/blob/master/src/test/java/stepDefinitions/LatamPageSteps.java)
-      ademas de esta forma tambien facilita el mantenimiento del codigo
-    - Utils Pattern: Se agrupan todos los metodos repetitivos y reutulizables en clases especificas, lo cual permite que los StepsDefitinion
-      tenga una estuctura mas organizada y limpia, ademas de que reduce la duplicacion de codigo y el mantemiento, este patron se puede ver en los Files
-      [DateHelper.java](https://github.com/FZeaa/GSQA-Prueba-ATMIngreso/blob/master/src/main/java/utils/DateHelper.java) y [AssertUtil.java](https://github.com/FZeaa/GSQA-Prueba-ATMIngreso/blob/master/src/main/java/utils/AssertUtil.java)
+    - El Behavior Driven Development (BDD) permite enfocar el desarrollo en el comportamiento esperado de la aplicación, mejorando la comunicación entre equipos técnicos y de negocio. En este proyecto, se implementó utilizando Gherkin en el archivo [Latam.feature](https://github.com/FZeaa/GSQA-Prueba-ATMIngreso/blob/master/features/Latam.feature), lo que facilita la escritura de escenarios legibles para todos los involucrados
+    - POM Pattern: Este patrón permite organizar el código separando los localizadores y acciones de cada página en archivos específicos, mejorando la reutilización y mantenimiento. En este caso, se implementó en [LatamPageSteps.java](https://github.com/FZeaa/GSQA-Prueba-ATMIngreso/blob/master/src/test/java/stepDefinitions/LatamPageSteps.java), donde los localizadores se centralizan para evitar redundancia y facilitar modificaciones futuras
+    - Utils Pattern: Se agruparon métodos reutilizables en clases específicas para mantener una estructura más organizada y reducir la duplicación de código. Ejemplos de esto son [DateHelper.java](https://github.com/FZeaa/GSQA-Prueba-ATMIngreso/blob/master/src/main/java/utils/DateHelper.java) y [AssertUtil.java](https://github.com/FZeaa/GSQA-Prueba-ATMIngreso/blob/master/src/main/java/utils/AssertUtil.java), que contienen funciones comunes utilizadas en los Step Definitions, garantizando mayor mantenibilidad y modularidad
 2. Diagrama de patrones de Arquitectura:
     - Se uso Draw.io para realizar el diagrama, Puede visualizarse en el siguiente [PDF](https://github.com/FZeaa/GSQA-Prueba-ATMIngreso/blob/master/GSQADiagramaDePruebas.drawio.pdf)
   
@@ -31,7 +25,7 @@ ejecución de estas automatizaciones?
        2. Pruebas en QA - Trigger Despliegue en ambiente de QA
        3. Smoke Test Prod - Trigger Despliegues en ambiente de Prod
        4. Pruenas de Regresion - Trigger Programado a una hora especifica
-   - Tener en cuenta que la cantidad de pipelines siempre estara dada por las necesidades del proyecto y su envergadura     
+  > Nota: La cantidad de pipelines puede variar según la complejidad del proyecto y los requerimientos del equipo de desarrollo.  
 3. ¿En cuál pipeline debería correr cada una de las pruebas, las UI y las unitarias?
    -  Las Puerbas UI pueden correr en el pipeline de Pruebas QA y el Smoke Test, por otra parte las
      prubas unitarias se pueden ejecutra en el pipeline Build y Despliegue
